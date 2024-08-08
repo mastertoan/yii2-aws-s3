@@ -39,6 +39,8 @@ class Service extends Component implements ServiceInterface
     /** @var int|string|\DateTime */
     public $defaultPresignedExpiration = '';
 
+    public $usePathStype = true;
+
     /** @var array S3Client config */
     protected $clientConfig = ['version' => 'latest'];
 
