@@ -168,7 +168,7 @@ class Service extends Component implements ServiceInterface
     public function setEndpoint(string $endpoint)
     {
         $this->clientConfig['endpoint']                = $endpoint;
-        $this->clientConfig['use_path_style_endpoint'] = true;
+        $this->clientConfig['use_path_style_endpoint'] = $this->usePathStype;
     }
 
     /**
