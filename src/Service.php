@@ -39,7 +39,7 @@ class Service extends Component implements ServiceInterface
     /** @var int|string|\DateTime */
     public $defaultPresignedExpiration = '';
 
-    public $usePathStype = true;
+    public $usePathStyle = true;
 
     /** @var array S3Client config */
     protected $clientConfig = ['version' => 'latest'];
@@ -168,7 +168,7 @@ class Service extends Component implements ServiceInterface
     public function setEndpoint(string $endpoint)
     {
         $this->clientConfig['endpoint']                = $endpoint;
-        $this->clientConfig['use_path_style_endpoint'] = $this->usePathStype;
+        $this->clientConfig['use_path_style_endpoint'] = $this->usePathStyle;
     }
 
     /**
